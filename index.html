@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Put on your detective hat: What’s wrong in this video?</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+<style>
+h2 {
+  font-family: 'Rubik', sans-serif;
+  font-size: 40px;
+  font-weight: 300;
+  letter-spacing: -1px;
+  margin-bottom: 1rem;
+}
+h3 {
+  margin-bottom: 1rem;
+}
+h4 {
+  margin-bottom: 1rem;
+}
+video {
+  width: 100%;
+  height: 100%;
+}
+code {
+  background-color: #f5f5f5;
+  display: block;
+  padding: 20px;
+  white-space: pre-wrap;
+}
+.container {
+  padding: 40px 15px;
+}
+.center {
+  text-align: center;
+}
+.underline {
+  text-decoration: underline;
+}
+.nowrap {
+  white-space: nowrap;
+}
+.authors {
+  line-height: 2;
+  font-size: 18px;
+}
+.section {
+  padding: 10px 0 30px;
+}
+.content {
+  padding: 10px 0;
+}
+.video {
+  padding: 20px 0 20px;
+}
+.image{
+  padding: 0 30px;
+}
+.image-doc{
+  padding: 0 25px;
+}
+.embedded-video {
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-bottom: 56.25%;
+  overflow: hidden;
+  border-radius: 10px !important;
+}
+.embedded-video iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+</style>
+</head>
+<body>
+<div class="container">
+  <div class="row">
+    <div class="col-12">
+      <div class="content">
+        <h2 class="center content">Put on your detective hat: What’s wrong in this video?</h2>
+        <div class="center content authors">
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <a href="" target="_blank">
+            <span class="nowrap">Rohith Peddi<sup>1</sup></span>
+          </a>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <a href="" target="_blank">
+            <span class="nowrap">Shivvrat Arya<sup>1</sup></span>
+          </a>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <a href="" target="_blank">
+            <span class="nowrap">Bharath Challa<sup>1</sup></span>
+          </a>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <a href="" target="_blank">
+            <span class="nowrap">Likhitha Pallapothula<sup>1</sup></span>
+          </a>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <a href="" target="_blank">
+            <span class="nowrap">Akshay Vyas<sup>1</sup></span>
+          </a>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <a href="" target="_blank">
+            <span class="nowrap">Vasundhara Komaragiri<sup>1</sup></span>
+          </a>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <a href="" target="_blank">
+            <span class="nowrap">Jikai Wang<sup>1</sup></span>
+          </a>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <a href="" target="_blank">
+            <span class="nowrap">Nicholas Ruozzi<sup>1</sup></span>
+          </a>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <a href="" target="_blank">
+            <span class="nowrap"> Eric Ragan<sup>2</sup></span>
+          </a>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <a href="" target="_blank">
+            <span class="nowrap">Yu Xiang<sup>1</sup></span>
+          </a>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <a href="" target="_blank">
+            <span class="nowrap">Vibhav Giridhar Gogate<sup>1</sup></span>
+          </a>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<!--          <a href="https://research.nvidia.com/person/dieter-fox" target="_blank">-->
+<!--            <span class="nowrap">Dieter Fox<sup>1,2</sup></span>-->
+<!--          </a>-->
+        </div>
+        <div class="center content authors">
+          <span><sup>1</sup>The University of Texas at Dallas, <sup>2</sup>The University of Florida</span>
+        </div>
+        <div class="center authors">
+          <span>NeurIPS 2023</span>
+        </div>
+      </div>
+
+<!--      <div class="video">-->
+<!--        <video autoplay="autoplay" muted="muted" loop="loop">-->
+<!--          <source src="assets/dex-ycb-render.mp4" type="video/mp4">-->
+<!--        </video>-->
+<!--      </div>-->
+
+      <div class="section">
+        <h3>Abstract</h3>
+        <p>Following step-by-step procedures is an essential component of various activities carried out by individuals in their everyday lives. These procedures serve as a guiding framework that helps achieve goals efficiently, whether assembling furniture or preparing a recipe. However, the complexity and duration of procedural activities inherently increase the likelihood of making errors. Understanding such procedural activities from a sequence of frames is a challenging task that demands an accurate interpretation of visual information and an ability to reason about the structure of the activity. To this end, we collected a new ego-centric 4D dataset comprising 380 recordings (90 hrs) of people performing recipes in kitchen environments. This dataset consists of two distinct activity types: one in which participants adhere to the provided recipe instructions and another where they deviate and induce errors. We provide 5K step annotations and 10K fine-grained action annotations for 20% of the collected data and benchmark it on two tasks: error detection and procedure learning.</p>
+      </div>
+
+      <div><h1>Coming Soon</h1></div>
+<!--      <div class="section">-->
+<!--        <h3>Paper & Document</h3>-->
+<!--        <div class="row content">-->
+<!--          <div class="center image-doc">-->
+<!--            <a href="./assets/chao_cvpr2021.pdf" target="_blank">-->
+<!--              <img src="./assets/pdf.png" height="176px" width="136px">-->
+<!--              <br>-->
+<!--              <span class="icon"> <i class="fas fa-file-pdf"></i> </span>-->
+<!--              <span>PDF</span>-->
+<!--            </a>-->
+<!--          </div>-->
+<!--          <div class="center image-doc">-->
+<!--            <a href="./assets/chao_cvpr2021_supp.pdf" target="_blank">-->
+<!--              <img src="./assets/supplementary.png" height="176px" width="136px">-->
+<!--              <br>-->
+<!--              <span class="icon"> <i class="fas fa-file-pdf"></i> </span>-->
+<!--              <span>Supplementary</span>-->
+<!--            </a>-->
+<!--          </div>-->
+<!--          <div class="center image-doc">-->
+<!--            <a href="https://arxiv.org/abs/2104.04631" target="_blank">-->
+<!--              <img src="./assets/arxiv.png" height="176px" width="136px">-->
+<!--              <br>-->
+<!--              <span class="icon"> <i class="fas fa-file-pdf"></i> </span>-->
+<!--              <span>arXiv</span>-->
+<!--            </a>-->
+<!--          </div>-->
+<!--          <div class="center">-->
+<!--            <a href="https://cad.onshape.com/documents/ac141300e03f08f590fbeecb/w/ad063a3527ccd1a24d289e93/e/13380efe91e477d6c0872bdb" target="_blank">-->
+<!--              <img src="./assets/cad.png" height="176px" width="136px">-->
+<!--              <br>-->
+<!--              <div style="width: 188px">-->
+<!--                <span class="icon"> <i class="fas fa-file-alt"></i> </span>-->
+<!--                <span>Studio CAD Model</span>-->
+<!--              </div>-->
+<!--            </a>-->
+<!--          </div>-->
+<!--          <div class="center">-->
+<!--            <a href="https://docs.google.com/document/d/1bIB2AnTWlHNNe3clZrGfXYGn9XTN2JzYCer6eVQipBU" target="_blank">-->
+<!--              <img src="./assets/hardware.png" height="176px" width="136px">-->
+<!--              <br>-->
+<!--              <div style="width: 188px">-->
+<!--                <span class="icon"> <i class="fas fa-file-alt"></i> </span>-->
+<!--                <span>Studio Hardware</span>-->
+<!--              </div>-->
+<!--            </a>-->
+<!--          </div>-->
+<!--          <div class="center">-->
+<!--            <a href="https://docs.google.com/document/d/1jflhWGTn4lsGj5PiJ14Q37k0xHSnkTuDJvkdFr_j-fo" target="_blank">-->
+<!--              <img src="./assets/realsense.png" height="176px" width="136px">-->
+<!--              <br>-->
+<!--              <div style="width: 188px">-->
+<!--                <span class="icon"> <i class="fas fa-file-alt"></i> </span>-->
+<!--                <span>RealSense Calibration & Recording Guide</span>-->
+<!--              </div>-->
+<!--            </a>-->
+<!--          </div>-->
+<!--        </div>-->
+<!--        <br>-->
+<!--        <div class="content">-->
+<!--          <h4>Citing DexYCB</h4>-->
+<!--          <p>Please cite DexYCB if it helps your research:</p>-->
+<!--          <pre><code>@INPROCEEDINGS{chao:cvpr2021,-->
+<!--  author    = {Yu-Wei Chao and Wei Yang and Yu Xiang and Pavlo Molchanov and Ankur Handa and Jonathan Tremblay and Yashraj S. Narang and Karl {Van Wyk} and Umar Iqbal and Stan Birchfield and Jan Kautz and Dieter Fox},-->
+<!--  booktitle = {IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},-->
+<!--  title     = {{DexYCB}: A Benchmark for Capturing Hand Grasping of Objects},-->
+<!--  year      = {2021},-->
+<!--}</code></pre>-->
+<!--        </div>-->
+<!--      </div>-->
+
+<!--      <div class="section">-->
+<!--        <h3>Data</h3>-->
+<!--        <p>DexYCB is licensed under <span class="underline"><a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span>.</p>-->
+<!--        <p>We provide two options for downloading the dataset:</p>-->
+<!--        <ol>-->
+<!--          <li>-->
+<!--            <p>A single compressed file that contains everything:<a href="https://drive.google.com/file/d/18fD8RtWJM_fBi3bsuQTzdjIKxdRYtl57" target="_blank"><span class="icon"> <i class="fas fa-download"></i> </span>dex-ycb-20210415.tar.gz</a> (119G). Download this file to a new folder and extract it with:</p>-->
+<!--            <pre><code>tar zxvf dex-ycb-20210415.tar.gz</code></pre>-->
+<!--          </li>-->
+<!--          <li>-->
+<!--            <p>A breakdown to multiple compressed files, each containing a sub-folder. Download all the files below to a new folder and extract them individually:</p>-->
+<!--            <ul>-->
+<!--              <li><a href="https://drive.google.com/file/d/1Ehh92wDE3CWAiKG7E9E73HjN2Xk2XfEk" target="_blank"><span class="icon"> <i class="fas fa-download"></i> </span>20200709-subject-01.tar.gz</a> (12G)</li>-->
+<!--              <li><a href="https://drive.google.com/file/d/1Uo7MLqTbXEa-8s7YQZ3duugJ1nXFEo62" target="_blank"><span class="icon"> <i class="fas fa-download"></i> </span>20200813-subject-02.tar.gz</a> (12G)</li>-->
+<!--              <li><a href="https://drive.google.com/file/d/1FkUxas8sv8UcVGgAzmSZlJw1eI5W5CXq" target="_blank"><span class="icon"> <i class="fas fa-download"></i> </span>20200820-subject-03.tar.gz</a> (12G)</li>-->
+<!--              <li><a href="https://drive.google.com/file/d/14up6qsTpvgEyqOQ5hir-QbjMB_dHfdpA" target="_blank"><span class="icon"> <i class="fas fa-download"></i> </span>20200903-subject-04.tar.gz</a> (12G)</li>-->
+<!--              <li><a href="https://drive.google.com/file/d/1NBA_FPyGWOQF5-X9ueAat5g8lDMz-EmS" target="_blank"><span class="icon"> <i class="fas fa-download"></i> </span>20200908-subject-05.tar.gz</a> (12G)</li>-->
+<!--              <li><a href="https://drive.google.com/file/d/1UWIN2-wOBZX2T0dkAi4ctAAW8KffkXMQ" target="_blank"><span class="icon"> <i class="fas fa-download"></i> </span>20200918-subject-06.tar.gz</a> (12G)</li>-->
+<!--              <li><a href="https://drive.google.com/file/d/1oWEYD_o3PVh39pLzMlJcArkDtMj4nzI0" target="_blank"><span class="icon"> <i class="fas fa-download"></i> </span>20200928-subject-07.tar.gz</a> (12G)</li>-->
+<!--              <li><a href="https://drive.google.com/file/d/1GTNZwhWbs7Mfez0krTgXwLPndvrw1Ztv" target="_blank"><span class="icon"> <i class="fas fa-download"></i> </span>20201002-subject-08.tar.gz</a> (12G)</li>-->
+<!--              <li><a href="https://drive.google.com/file/d/1j0BLkaCjIuwjakmywKdOO9vynHTWR0UH" target="_blank"><span class="icon"> <i class="fas fa-download"></i> </span>20201015-subject-09.tar.gz</a> (12G)</li>-->
+<!--              <li><a href="https://drive.google.com/file/d/1FvFlRfX-p5a5sAWoKEGc17zKJWwKaSB-" target="_blank"><span class="icon"> <i class="fas fa-download"></i> </span>20201022-subject-10.tar.gz</a> (12G)</li>-->
+<!--              <li><a href="https://drive.google.com/file/d/1CPqLjsaYNjE3xSJbuWmqaMsGvyGIxiKL" target="_blank"><span class="icon"> <i class="fas fa-download"></i> </span>bop.tar.gz</a> (1.2G)</li>-->
+<!--              <li><a href="https://drive.google.com/file/d/1UAwVKT4Rgb1fLcFoa1o71_-0NtSvvLAQ" target="_blank"><span class="icon"> <i class="fas fa-download"></i> </span>calibration.tar.gz</a> (16K)</li>-->
+<!--              <li><a href="https://drive.google.com/file/d/1cAzlQBpcTatI5ykYQ8ziQiHLUG_a_UpM" target="_blank"><span class="icon"> <i class="fas fa-download"></i> </span>models.tar.gz</a> (1.4G)</li>-->
+<!--            </ul>-->
+<!--          </li>-->
+<!--        </ol>-->
+<!--        <p>Once you successfully download and extract the dataset, you should have a folder with the following structure:</p>-->
+<!--        <pre><code>├── 20200709-subject-01/-->
+<!--├── 20200813-subject-02/-->
+<!--├── ...-->
+<!--├── calibration/-->
+<!--└── models/</code></pre>-->
+<!--        <p>For instructions about using the dataset please see <span><a href="https://github.com/NVlabs/dex-ycb-toolkit" target="_blank">dex-ycb-toolkit</a></span>.</p>-->
+<!--      </div>-->
+
+<!--      <div class="section">-->
+<!--        <h3>Code</h3>-->
+<!--        <div class="row content">-->
+<!--          <div class="center image">-->
+<!--            <a href="https://github.com/NVlabs/dex-ycb-toolkit" target="_blank">-->
+<!--              <img src="./assets/GitHub-Mark/PNG/GitHub-Mark-64px.png">-->
+<!--            </a>-->
+<!--          </div>-->
+<!--          <div>-->
+<!--            <span><a href="https://github.com/NVlabs/dex-ycb-toolkit" target="_blank">dex-ycb-toolkit</a></span>-->
+<!--            <br>-->
+<!--            <span>A Python package that provides evaluation and visualization tools for the DexYCB dataset.</span>-->
+<!--          </div>-->
+<!--        </div>-->
+<!--      </div>-->
+
+<!--      <div class="section">-->
+<!--        <h3>Video</h3>-->
+<!--          <div class="embedded-video">-->
+<!--            <iframe src="https://www.youtube.com/embed/Q4wyBaZeBw0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>-->
+<!--          </div>-->
+<!--      </div>-->
+
+<!--      <div class="section">-->
+<!--        <h3>Contact</h3>-->
+<!--        <p>Send any comments or questions to Yu-Wei Chao: <a href="mailto:ychao@nvidia.com">ychao@nvidia.com</a>.</p>-->
+<!--      </div>-->
+
+<!--      <hr>-->
+<!--      <p>Last updated on 2022/05/21</p>-->
+<!--    </div>-->
+<!--  </div>-->
+<!--</div>-->
+<!--</body>-->
+<!--</html>-->
