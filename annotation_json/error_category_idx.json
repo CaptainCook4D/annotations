@@ -1,0 +1,10 @@
+{
+    "Preparation Error": 0,
+    "Measurement Error": 1,
+    "Order Error": 2,
+    "Timing Error": 3,
+    "Technique Error": 4,
+    "Temperature Error": 5,
+    "Missing Step": 6,
+    "Other": 7
+}
