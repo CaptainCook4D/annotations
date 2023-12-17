@@ -17436,8 +17436,8 @@
             },
             {
                 "step_id": 157,
-                "start_time": -1.0,
-                "end_time": -1.0,
+                "start_time": 1258,
+                "end_time": 1273,
                 "description": "mix-mix well contents of the pan",
                 "has_errors": false
             },
@@ -18475,7 +18475,7 @@
                 "start_time": -1.0,
                 "end_time": -1.0,
                 "description": "simmer-Allow the mixture to simmer over low heat for 5 minutes or until the mixture becomes thick",
-                "has_errors": false
+                "has_errors": true
             }
         ]
     },
@@ -22690,7 +22690,7 @@
                 "start_time": -1.0,
                 "end_time": -1.0,
                 "description": "Add-1/4 teaspoon salt to the bowl",
-                "has_errors": false
+                "has_errors": true
             }
         ]
     },
@@ -23413,7 +23413,7 @@
                 "start_time": -1.0,
                 "end_time": -1.0,
                 "description": "Top-Top with more parmesan if desired",
-                "has_errors": true
+                "has_errors": false
             }
         ]
     },
@@ -23581,17 +23581,17 @@
                 "has_errors": false
             },
             {
-                "step_id": 193,
-                "start_time": 626.234,
-                "end_time": 651.467,
-                "description": "Add-1/6 cup grated parmesan cheese",
-                "has_errors": true
+                "step_id": 194,
+                "start_time": 627,
+                "end_time": 651,
+                "description": "season-pepper to taste",
+                "has_errors": false
             },
             {
-                "step_id": 194,
-                "start_time": 661.994,
-                "end_time": 701.813,
-                "description": "season-pepper to taste",
+                "step_id": 193,
+                "start_time": 662,
+                "end_time": 700,
+                "description": "Add-1/6 cup grated parmesan cheese",
                 "has_errors": true
             },
             {
@@ -23613,7 +23613,7 @@
                 "start_time": -1.0,
                 "end_time": -1.0,
                 "description": "Top-Top with more parmesan if desired",
-                "has_errors": true
+                "has_errors": false
             }
         ]
     },
@@ -24013,7 +24013,7 @@
                 "start_time": -1.0,
                 "end_time": -1.0,
                 "description": "Top-Top with more parmesan if desired",
-                "has_errors": true
+                "has_errors": false
             }
         ]
     },
@@ -24313,7 +24313,7 @@
                 "start_time": -1.0,
                 "end_time": -1.0,
                 "description": "Top-Top with more parmesan if desired",
-                "has_errors": true
+                "has_errors": false
             }
         ]
     },
@@ -25921,14 +25921,14 @@
                 "start_time": -1.0,
                 "end_time": -1.0,
                 "description": "Add-Add chopped shallot to the pan",
-                "has_errors": false
+                "has_errors": true
             },
             {
                 "step_id": 214,
                 "start_time": -1.0,
                 "end_time": -1.0,
                 "description": "Pull-Pull out mushroom stems",
-                "has_errors": false
+                "has_errors": true
             }
         ]
     },
@@ -26063,7 +26063,7 @@
                 "start_time": -1.0,
                 "end_time": -1.0,
                 "description": "Season-Season pan with salt",
-                "has_errors": false
+                "has_errors": true
             }
         ]
     },
@@ -26523,8 +26523,8 @@
             },
             {
                 "step_id": 207,
-                "start_time": -1.0,
-                "end_time": -1.0,
+                "start_time": 371,
+                "end_time": 432,
                 "description": "cook-cook the pan, often stirring, for 1 minute",
                 "has_errors": true
             },
@@ -33120,7 +33120,7 @@
             {
                 "step_id": 274,
                 "start_time": 723.5765829803005,
-                "end_time": 1052.5329368730158,
+                "end_time": 1054,
                 "description": "continue cooking-continue cooking, stirring often, for 2-3 minutes, until vegetables are crisp-tender",
                 "has_errors": true
             },
@@ -33143,14 +33143,14 @@
                 "start_time": -1.0,
                 "end_time": -1.0,
                 "description": "cook-cook, stirring, for 1 minute until the sauce thickens",
-                "has_errors": false
+                "has_errors": true
             },
             {
                 "step_id": 253,
                 "start_time": -1.0,
                 "end_time": -1.0,
                 "description": "cook-cook, stirring often, for 4 minutes. If the pan gets too hot on medium-high, turn the heat down to medium",
-                "has_errors": false
+                "has_errors": true
             },
             {
                 "step_id": 260,
@@ -33539,7 +33539,7 @@
                 "start_time": -1.0,
                 "end_time": -1.0,
                 "description": "Add-Add 1/6 cup water the bowl",
-                "has_errors": false
+                "has_errors": true
             }
         ]
     },

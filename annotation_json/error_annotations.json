@@ -20566,8 +20566,8 @@
             {
                 "description": "mix-mix well contents of the pan",
                 "step_id": 157,
-                "start_time": -1.0,
-                "end_time": -1.0
+                "start_time": 1258,
+                "end_time": 1273
             },
             {
                 "description": "Add-Add tomato puree to the pan",
@@ -22164,8 +22164,15 @@
             {
                 "description": "simmer-Allow the mixture to simmer over low heat for 5 minutes or until the mixture becomes thick",
                 "step_id": 153,
+                "errors": [
+                    {
+                        "tag": "Missing Step",
+                        "description": "Skipped this step"
+                    }
+                ],
                 "start_time": -1.0,
-                "end_time": -1.0
+                "end_time": -1.0,
+                "modified_description": "Skipped this step"
             }
         ]
     },
@@ -27691,10 +27698,6 @@
                     {
                         "tag": "Technique Error",
                         "description": "Did not combine all the ingredients properly. Did not mix the ingredients"
-                    },
-                    {
-                        "tag": "Preparation Error",
-                        "description": "Used zucchini instead of cucumber"
                     }
                 ],
                 "start_time": 699.4400537374518,
@@ -27704,8 +27707,15 @@
             {
                 "description": "Add-1/4 teaspoon salt to the bowl",
                 "step_id": 184,
+                "errors": [
+                    {
+                        "tag": "Missing Step",
+                        "description": "Skipped this step"
+                    }
+                ],
                 "start_time": -1.0,
-                "end_time": -1.0
+                "end_time": -1.0,
+                "modified_description": "Skipped this step"
             }
         ]
     },
@@ -28822,15 +28832,8 @@
             {
                 "description": "Top-Top with more parmesan if desired",
                 "step_id": 195,
-                "errors": [
-                    {
-                        "tag": "Missing Step",
-                        "description": "Skipped this step"
-                    }
-                ],
                 "start_time": -1.0,
-                "end_time": -1.0,
-                "modified_description": "Skipped this step"
+                "end_time": -1.0
             }
         ]
     },
@@ -28973,34 +28976,22 @@
                 "end_time": 623.457
             },
             {
+                "description": "season-pepper to taste",
+                "step_id": 194,
+                "start_time": 627,
+                "end_time": 651
+            },
+            {
                 "description": "Add-1/6 cup grated parmesan cheese",
                 "step_id": 193,
                 "errors": [
                     {
-                        "tag": "Other",
-                        "description": "Added pepper to taste in this step"
+                        "tag": "Technique Error",
+                        "description": "Spill cheese while adding to the pan"
                     }
                 ],
-                "start_time": 626.234,
-                "end_time": 651.467,
-                "modified_description": "season-pepper to taste"
-            },
-            {
-                "description": "season-pepper to taste",
-                "step_id": 194,
-                "errors": [
-                    {
-                        "tag": "Other",
-                        "description": "added cheese in this step erroneously and spoiled some out while adding"
-                    },
-                    {
-                        "tag": "Preparation Error",
-                        "description": "Added cheese in this step instead of period and spiked some out while adding"
-                    }
-                ],
-                "start_time": 661.994,
-                "end_time": 701.813,
-                "modified_description": "Add-1/6 cup grated parmesan cheese and spoiled some out while adding"
+                "start_time": 662,
+                "end_time": 700
             },
             {
                 "description": "Cook-Cook for 2 minutes or until the zoodles are done",
@@ -29017,15 +29008,8 @@
             {
                 "description": "Top-Top with more parmesan if desired",
                 "step_id": 195,
-                "errors": [
-                    {
-                        "tag": "Missing Step",
-                        "description": "Skipped this step"
-                    }
-                ],
                 "start_time": -1.0,
-                "end_time": -1.0,
-                "modified_description": "Skipped this step"
+                "end_time": -1.0
             }
         ]
     },
@@ -29449,15 +29433,8 @@
             {
                 "description": "Top-Top with more parmesan if desired",
                 "step_id": 195,
-                "errors": [
-                    {
-                        "tag": "Missing Step",
-                        "description": "Skipped this step"
-                    }
-                ],
                 "start_time": -1.0,
-                "end_time": -1.0,
-                "modified_description": "Skipped this step"
+                "end_time": -1.0
             }
         ]
     },
@@ -29925,15 +29902,8 @@
             {
                 "description": "Top-Top with more parmesan if desired",
                 "step_id": 195,
-                "errors": [
-                    {
-                        "tag": "Missing Step",
-                        "description": "Skipped this step"
-                    }
-                ],
                 "start_time": -1.0,
-                "end_time": -1.0,
-                "modified_description": "Skipped this step"
+                "end_time": -1.0
             }
         ]
     },
@@ -31871,14 +31841,28 @@
             {
                 "description": "Add-Add chopped shallot to the pan",
                 "step_id": 209,
+                "errors": [
+                    {
+                        "tag": "Missing Step",
+                        "description": "Skipped this step"
+                    }
+                ],
                 "start_time": -1.0,
-                "end_time": -1.0
+                "end_time": -1.0,
+                "modified_description": "Skipped this step"
             },
             {
                 "description": "Pull-Pull out mushroom stems",
                 "step_id": 214,
+                "errors": [
+                    {
+                        "tag": "Missing Step",
+                        "description": "Skipped this step"
+                    }
+                ],
                 "start_time": -1.0,
-                "end_time": -1.0
+                "end_time": -1.0,
+                "modified_description": "Skipped this step"
             }
         ]
     },
@@ -32125,8 +32109,15 @@
             {
                 "description": "Season-Season pan with salt",
                 "step_id": 220,
+                "errors": [
+                    {
+                        "tag": "Missing Step",
+                        "description": "Skipped this step"
+                    }
+                ],
                 "start_time": -1.0,
-                "end_time": -1.0
+                "end_time": -1.0,
+                "modified_description": "Skipped this step"
             }
         ]
     },
@@ -32975,12 +32966,12 @@
                 "step_id": 207,
                 "errors": [
                     {
-                        "tag": "Timing Error",
-                        "description": "Cook for two minutes rather than one."
+                        "tag": "Order Error",
+                        "description": "Step performed before preparing the ingredients and cooking shallot"
                     }
                 ],
-                "start_time": -1.0,
-                "end_time": -1.0,
+                "start_time": 371,
+                "end_time": 432,
                 "modified_description": "cook-cook the pan, often stirring, for 2 minute"
             },
             {
@@ -40455,7 +40446,7 @@
                     }
                 ],
                 "start_time": 723.5765829803005,
-                "end_time": 1052.5329368730158
+                "end_time": 1054
             },
             {
                 "description": "Add-Add 1/2 tablespoon minced ginger to the bowl",
@@ -40484,14 +40475,28 @@
             {
                 "description": "cook-cook, stirring, for 1 minute until the sauce thickens",
                 "step_id": 264,
+                "errors": [
+                    {
+                        "tag": "Missing Step",
+                        "description": "Skipped this step"
+                    }
+                ],
                 "start_time": -1.0,
-                "end_time": -1.0
+                "end_time": -1.0,
+                "modified_description": "Skipped this step"
             },
             {
                 "description": "cook-cook, stirring often, for 4 minutes. If the pan gets too hot on medium-high, turn the heat down to medium",
                 "step_id": 253,
+                "errors": [
+                    {
+                        "tag": "Missing Step",
+                        "description": "Skipped this step"
+                    }
+                ],
                 "start_time": -1.0,
-                "end_time": -1.0
+                "end_time": -1.0,
+                "modified_description": "Skipped this step"
             },
             {
                 "description": "Whisk-Whisk the contents of bowl",
@@ -40512,12 +40517,12 @@
                 "errors": [
                     {
                         "tag": "Missing Step",
-                        "description": "did not perform this step"
+                        "description": "Skipped this step"
                     }
                 ],
                 "start_time": -1.0,
                 "end_time": -1.0,
-                "modified_description": "none"
+                "modified_description": "Skipped this step"
             },
             {
                 "description": "Add-Add 1 tablespoon honey to the bowl",
@@ -40525,12 +40530,12 @@
                 "errors": [
                     {
                         "tag": "Missing Step",
-                        "description": "did not perform this step"
+                        "description": "Skipped this step"
                     }
                 ],
                 "start_time": -1.0,
                 "end_time": -1.0,
-                "modified_description": "none"
+                "modified_description": "Skipped this step"
             }
         ]
     },
@@ -41174,8 +41179,15 @@
             {
                 "description": "Add-Add 1/6 cup water the bowl",
                 "step_id": 269,
+                "errors": [
+                    {
+                        "tag": "Missing Step",
+                        "description": "Skipped this step"
+                    }
+                ],
                 "start_time": -1.0,
-                "end_time": -1.0
+                "end_time": -1.0,
+                "modified_description": "Skipped this step"
             }
         ]
     },
@@ -50043,12 +50055,13 @@
                 "step_id": 331,
                 "errors": [
                     {
-                        "tag": "Order Error",
-                        "description": "Step performed before correct order"
+                        "tag": "Missing Step",
+                        "description": "Skipped this step"
                     }
                 ],
                 "start_time": -1.0,
-                "end_time": -1.0
+                "end_time": -1.0,
+                "modified_description": "Skipped this step"
             },
             {
                 "description": "Season-Season bowl with 1/4 tsp salt",
