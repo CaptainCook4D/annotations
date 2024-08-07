@@ -26,15 +26,15 @@
     <h3>Annotation Files</h3>
 </div>
 
-1. Annotation CSV
-   1. Activity ID and Step ID Mapping
+1. [Annotation CSVs](#annotation-csvs)
+   1. Activity ID and Step ID Mapping 
    2. Activity Step Description
    3. Average Segment Length
    4. Error Annotations
    5. Recording ID and Step ID Mapping
    6. Step Annotations
    7. Step ID and Step Description Mapping
-2. Annotation JSON
+2. [Annotation JSONs](#annotation-csvs)
    1. Activity ID and Step ID Mapping
    2. Complete Step Annotations JSON
    3. Error Annotations
@@ -62,12 +62,10 @@
 
 ----
 
-<div>
-    <h3>File Contents</h3> 
-</div>
 
+## Annotation CSVs <a id="annotation-csvs"></a>
 
-File: **activity_id_step_id_mapping.csv**
+### File: **activity_id_step_id_mapping.csv**
 
 | Column Name   | Type   | Description                        |
 |---------------|--------|------------------------------------|
@@ -75,7 +73,7 @@ File: **activity_id_step_id_mapping.csv**
 | activity_name | string | Name of the activity (Recipe Name) |
 | step_indices  | list   | List of Step IDs                   |
 
-File: **activity_step_description.csv**
+### File: **activity_step_description.csv**
 
 | Column Name      | Type   | Description                        |
 |------------------|--------|------------------------------------|
@@ -84,7 +82,7 @@ File: **activity_step_description.csv**
 | step_index       | int    | Step ID                            |
 | step_description | string | Description of the step            |
 
-File: **average_segment_length.csv**
+### File: **average_segment_length.csv**
 
 | Column Name            | Type   | Description                            |
 |------------------------|--------|----------------------------------------|
@@ -92,7 +90,7 @@ File: **average_segment_length.csv**
 | activity_name          | string | Name of the activity (Recipe Name)     |
 | average_segment_length | float  | Average segment length of the activity |
 
-File: **error_annotations.csv**
+### File: **error_annotations.csv**
 
 | Column Name       | Type   | Description                          |
 |-------------------|--------|--------------------------------------|
@@ -120,7 +118,7 @@ File: **error_annotations.csv**
 | error_description | string | Description of the other error       |
 
 
-File: **error_category_idx.csv**
+### File: **error_category_idx.csv**
 
 | Column Name        | Type   | Description         |
 |--------------------|--------|---------------------|
@@ -128,7 +126,7 @@ File: **error_category_idx.csv**
 | error_category     | string | Error Category Name |
 
 
-File: **recording_id_step_idx.csv**
+### File: **recording_id_step_idx.csv**
 
 | Column Name  | Type | Description                       |
 |--------------|------|-----------------------------------|
@@ -137,7 +135,7 @@ File: **recording_id_step_idx.csv**
 | step_indices | list | List of Step IDs in the recording |
 
 
-File: **step_annotations.csv**
+### File: **step_annotations.csv**
 
 | Column Name  | Type   | Description                        |
 |--------------|--------|------------------------------------|
@@ -149,7 +147,7 @@ File: **step_annotations.csv**
 | has_errors   | bool   | Error in the step                  |
 
 
-File: **step_idx_description.csv**
+### File: **step_idx_description.csv**
 
 
 | Column Name      | Type   | Description             |
@@ -158,9 +156,13 @@ File: **step_idx_description.csv**
 | step_description | string | Description of the step |
 
 
+## Annotation JSONs <a id="annotation-jsons"></a>
+
 ----
 
 File: **step_idx_description.json**
+
+> Can be used to map the step ID to the step description.
 
 ```json
 {
@@ -169,6 +171,9 @@ File: **step_idx_description.json**
 ```
 
 File: **step_annotations.json**
+
+> Contains metadata for each recording where the nature of recordings is just limited to the boolean.
+> For information about the error category and the  error description please see **complete_step_annotations.json**
 
 ```json
 {
@@ -187,4 +192,87 @@ File: **step_annotations.json**
     },
     ....
 }
+```
+
+File: **recording_id_step_idx.json**
+
+> Contains information about the steps ids in each recording. 
+> **Note**: Step IDs of repetitive steps are repeated in the order in which they are performed in the recording.
+
+```json
+{
+    "1_7" : [3, 1, 4, 12 ...],
+   "1_10" : [3, 1, 4, 11 ...],
+   ...
+}
+```
+
+File: **error_annotations.json**
+
+> This file contains the complete error annotations for each recording.
+> We attach errors that occur during each step as part of the steps.
+> Here, **tag** describes the error category and **description** presents the error description.
+> Here we exclude information about the person and the environment in which they are recorded.
+
+```json
+[
+   {
+        "recording_id": "1_10",
+        "activity_id": 1,
+        "is_error": true,
+        "step_annotations": [
+            {
+                "description": "Microwave-Microwave the ramekin cup uncovered on high for 30 seconds",
+                "step_id": 4,
+                "errors": [
+                    {
+                        "tag": "Missing Step",
+                        "description": "Skipped this step"
+                    }
+                ],
+                "start_time": -1.0,
+                "end_time": -1.0,
+                "modified_description": "Skipped this step"
+            },
+            ...
+        ]
+    },
+    ...
+]
+```
+
+
+File: **complete_step_annotations.json**
+
+> This file contains the complete step annotations for each recording.
+> It includes complete information about a recording namely (a) the person, (b) the environment, and (c) the errors that occur during each step of the recording
+
+
+```json
+[
+    "1_10" : {
+        "recording_id": "1_10",
+        "activity_id": 1,
+        "person": "6",
+        "environment": "1",
+        "is_error": true,
+        "step_annotations": [
+            {
+                "description": "Microwave-Microwave the ramekin cup uncovered on high for 30 seconds",
+                "step_id": 4,
+                "errors": [
+                    {
+                        "tag": "Missing Step",
+                        "description": "Skipped this step"
+                    }
+                ],
+                "start_time": -1.0,
+                "end_time": -1.0,
+                "modified_description": "Skipped this step"
+            },
+            ...
+        ]
+    },
+    ...
+]
 ```
